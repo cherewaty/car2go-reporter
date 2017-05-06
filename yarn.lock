@@ -1946,7 +1946,7 @@ ember-cli-app-version@^3.0.0:
     ember-cli-htmlbars "^1.0.0"
     git-repo-version "0.4.1"
 
-ember-cli-babel@^5.1.7:
+ember-cli-babel@^5.1.7, ember-cli-babel@^5.2.4:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-5.2.4.tgz#5ce4f46b08ed6f6d21e878619fb689719d6e8e13"
   dependencies:
@@ -2303,6 +2303,13 @@ ember-export-application-global@^2.0.0:
   resolved "https://registry.yarnpkg.com/ember-export-application-global/-/ember-export-application-global-2.0.0.tgz#8d6d7619ac8a1a3f8c43003549eb21ebed685bd2"
   dependencies:
     ember-cli-babel "^6.0.0-beta.7"
+
+ember-g-map@^0.0.25:
+  version "0.0.25"
+  resolved "https://registry.yarnpkg.com/ember-g-map/-/ember-g-map-0.0.25.tgz#32139e1c94c2a0d07b063422bf707e42f329af59"
+  dependencies:
+    ember-cli-babel "^5.2.4"
+    ember-cli-htmlbars "^1.1.1"
 
 ember-inflector@^1.9.2:
   version "1.12.1"

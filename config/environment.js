@@ -26,7 +26,11 @@ module.exports = function(environment) {
     apiNamespace: 'proxy/car2go/api/v2.1',
 
     dotEnv: {
-      clientAllowedKeys: ['API_URL']
+      clientAllowedKeys: ['API_URL', 'GOOGLE_MAPS_API_KEY']
+    },
+
+    'g-map': {
+      key: process.env.GOOGLE_MAPS_API_KEY
     }
   };
 

@@ -1,4 +1,6 @@
 import DS from 'ember-data';
+import Ember from 'ember';
+const { computed } = Ember;
 
 export default DS.Model.extend({
   address: DS.attr(),
@@ -9,5 +11,13 @@ export default DS.Model.extend({
   interior: DS.attr(),
   name: DS.attr(),
   smartPhoneRequired: DS.attr(),
-  vin: DS.attr()
+  vin: DS.attr(),
+
+  lat: computed('coordinates', function() {
+    return this.get('coordinates')[1];
+  }),
+
+  lng: computed('coordinates', function() {
+    return this.get('coordinates')[0];
+  })
 });
