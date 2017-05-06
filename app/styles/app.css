@@ -1,7 +1,8 @@
 body, html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   height: 100%;
-  width: 100%;
   margin: 0;
+  width: 100%;
 }
 
 body > .ember-view {
@@ -11,9 +12,20 @@ body > .ember-view {
 .g-map {
   height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 .g-map-canvas {
-  width: 100%;
   height: 100%;
+  width: 100%;
+}
+
+.vehicle-popout {
+  background: #fff;
+  bottom: 0;
+  padding: 1em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
 }
