@@ -13,13 +13,4 @@ test('it renders', function(assert) {
   this.render(hbs`{{modal-target}}`);
 
   assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#modal-target}}
-      template block text
-    {{/modal-target}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });
