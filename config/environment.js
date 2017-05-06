@@ -22,8 +22,11 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    'ember-cli-mirage': {
-      enabled: false
+    apiUrl: process.env.API_URL,
+    apiNamespace: 'proxy/car2go/api/v2.1',
+
+    dotEnv: {
+      clientAllowedKeys: ['API_URL']
     }
   };
 
@@ -47,7 +50,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV['ember-cli-mirage'] = {
+      enabled: true
+    };
   }
 
   return ENV;

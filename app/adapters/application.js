@@ -1,6 +1,7 @@
 import DS from 'ember-data';
+import ENV from '../config/environment';
 
 export default DS.RESTAdapter.extend({
-  host: 'https://www.car2go.com',
-  namespace: 'api/v2.1'
+  host: ENV.apiUrl,
+  namespace: ENV.apiNamespace
 });

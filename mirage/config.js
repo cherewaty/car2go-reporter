@@ -1,3 +1,5 @@
+import ENV from '../config/environment';
+
 export default function() {
 
   // These comments are here to help you get started. Feel free to delete them.
@@ -23,4 +25,8 @@ export default function() {
 
     http://www.ember-cli-mirage.com/docs/v0.3.x/shorthands/
   */
+
+  this.urlPrefix = ENV.apiUrl + '/' + ENV.apiNamespace;
+
+  this.get('/vehicles');
 }
