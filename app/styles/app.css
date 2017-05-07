@@ -47,7 +47,7 @@ body > .ember-view {
 
 .modal-dialog {
   background-color: white;
-  padding: 4em;
+  padding: 2em 3em;
   border: 1px solid #B4B4E8;
   position: relative;
   z-index: 5;
@@ -80,4 +80,18 @@ body > .ember-view {
 
 .vehicle-popout {
   padding: 1em 0;
+}
+
+.report-option-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-option-list li a {
+  display: block;
+  padding: 1em;
+}
+
+.report-option-list li a:hover {
+  background: #eee;
 }
