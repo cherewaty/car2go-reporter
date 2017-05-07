@@ -6,6 +6,11 @@ body, html {
   width: 100%;
 }
 
+a,
+a:visited {
+  color:#00aff8; /* car2go blue */
+}
+
 body > .ember-view {
   height: 100%;
   width: 100%;
