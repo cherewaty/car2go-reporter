@@ -9,6 +9,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('vehicle', { path: '/vehicles/:vehicle_id' }, function() {
     this.route('report');
+    this.route('report-success');
   });
 });
 
