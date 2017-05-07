@@ -1,11 +1,11 @@
 <div class="report-card">
   <h3>What's wrong?</h3>
 
-  <p>The car2go vehicle&hellip;</p>
+  <p>The car2go vehicle {{vehicle.name}}&hellip;</p>
   <ul class="report-option-list">
-    <li>{{#link-to 'vehicle.report-success'}}&hellip; isn’t here.{{/link-to}}</li>
-    <li>{{#link-to 'vehicle.report-success'}}&hellip; is not following parking rules.{{/link-to}}</li>
-    <li>{{#link-to 'vehicle.report-success'}}&hellip; is damaged.{{/link-to}}</li>
-    <li>{{#link-to 'vehicle.report-success'}}&hellip; is dirty.{{/link-to}}</li>
+    <li><a {{action 'submitReport' 'VEHICLE_INCORRECT_LOCATION'}}>&hellip; isn’t here.</a></li>
+    <li><a {{action 'submitReport' 'VEHICLE_PARKING_VIOLATION'}}>&hellip; is not following parking rules.</a></li>
+    <li><a {{action 'submitReport' 'VEHICLE_DAMAGED'}}>&hellip; is damaged.</a></li>
+    <li><a {{action 'submitReport' 'VEHICLE_DIRTY'}}>&hellip; is dirty.</a></li>
   </ul>
 </div>

@@ -9,6 +9,8 @@ body, html {
 a,
 a:visited {
   color:#00aff8; /* car2go blue */
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 body > .ember-view {

@@ -1,1 +1,1 @@
-{{to-elsewhere named="modal" send=(hash body=(component "vehicle-report"))}}
+{{to-elsewhere named="modal" send=(hash body=(component "vehicle-report" vehicle=model onSubmitReport=(route-action 'sendReport')))}}
