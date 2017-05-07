@@ -1,14 +1,10 @@
 {{modal-target}}
 
-<div class="v-container">
-  <div class="container">
-    <main>
-      {{#g-map lat=30.2689940 lng=-97.7405440 zoom=16 as |context|}}
-        {{#each model as |vehicle|}}
-          {{g-map-marker context lat=vehicle.lat lng=vehicle.lng onClick=(route-action "handleVehicleClick" vehicle.id)}}
-        {{/each}}
-      {{/g-map}}
-      {{liquid-outlet class="popout-container"}}
-    </main>
-  </div>
+<div class="map-container">
+  {{#g-map lat=30.2689940 lng=-97.7405440 zoom=16 as |context|}}
+    {{#each model as |vehicle|}}
+      {{g-map-marker context lat=vehicle.lat lng=vehicle.lng onClick=(route-action "handleVehicleClick" vehicle.id)}}
+    {{/each}}
+  {{/g-map}}
+  {{liquid-outlet class="popout-container"}}
 </div>
